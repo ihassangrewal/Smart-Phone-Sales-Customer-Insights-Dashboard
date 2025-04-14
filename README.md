@@ -1,65 +1,73 @@
-# 📊 Smartphone Sales and Customer Insights Dashboard
+# 📱 Smartphone Sales & Customer Insights Dashboard
 
-This project presents a comprehensive **Tableau dashboard** analyzing smartphone sales data to uncover customer insights. The goal was to visualize key business metrics such as revenue, customer ratings, and brand performance using interactive charts and filters.
-
----
-
-## 🔧 Tools & Technologies Used
-
-- **Tableau** – For creating interactive dashboards and visualizations  
-- **Microsoft Excel / CSV** – For data cleaning and preprocessing  
-- **SQL** – Used for initial data querying and summarization  
-- **Git & GitHub** – For version control and showcasing work
+This project showcases an **interactive Tableau dashboard** built to explore smartphone sales data, uncover customer insights, and identify patterns in brand performance, pricing, and customer satisfaction. It simulates a real-world scenario where business teams need to understand market dynamics quickly through visual storytelling.
 
 ---
 
-## 📁 Dataset
+## 🛠 Tools & Technologies Used
 
-- **File**: `Sales_Enhanced.csv`  
+- **Tableau** – Interactive dashboard creation and visual analytics  
+- **Excel / CSV** – Data preprocessing and enhancement  
+- **SQL** – Used for basic filtering, grouping, and revenue aggregations  
+- **Git & GitHub** – Project versioning and showcasing
+
+---
+
+## 📂 Dataset
+
+- **Filename**: `Sales_Enhanced.csv`  
 - **Size**: ~1,500 rows  
-- **Fields**:
-  - Brand  
-  - Mobile  
-  - Storage & Memory  
-  - Selling Price & Original Price  
-  - Discount  
-  - Customer Rating  
-  - Market Share (%)  
-  - Revenue (calculated)
+- **Data Fields**:
+  - `Brand`  
+  - `Mobile Model`  
+  - `Memory`, `Storage`  
+  - `Selling Price`, `Original Price`, `Discount`  
+  - `Customer Rating`  
+  - `Market Share (%)`  
+  - `Revenue` (derived)
 
-The dataset was manually enhanced and cleaned to ensure consistency before importing into Tableau. Some initial filtering and revenue calculations were done using basic **SQL queries**.
-
----
-
-## 📌 Dashboard Highlights
-
-The dashboard consists of **6 interactive visualizations**:
-
-1. **Total Revenue by SmartPhone Brands** – Horizontal bar chart
-2. **Market Share by Brand** – Pie chart showing percentage split
-3. **Average Rating by Brand** – Bar chart with color gradient by rating
-4. **Top 10 Smartphones by Avg. Rating** – Horizontal bar chart
-5. **Top 10 Smartphones by Total Revenue** – Horizontal bar chart
-6. **Price vs Rating** – Scatter plot with trend line showing relationship
-
-**Interactive Brand Filter** is added to dynamically update all charts.
+The dataset was manually cleaned and enhanced for consistency. SQL was used to compute total revenue per model and filter for top-performing devices by different criteria.
 
 ---
 
-## 📈 Key Insights
+## 📊 Dashboard Overview
 
-- 📱 **Apple** dominates the smartphone market in both revenue and customer rating.
-- 💵 A **positive correlation** exists between smartphone price and customer rating.
-- 📊 Budget brands like **vivo** and **realme** maintain strong ratings despite lower prices.
-- 🔝 Models like *vivo S2* and *iPhone XS* stand out in top-rated devices.
+The **Smart Phone Sales & Customer Insights Dashboard** includes 6 key visualizations:
+
+1. **Total Revenue by Smartphone Brands** – Highlights overall revenue leaders
+2. **Market Share by Brand** – Pie chart representing brand market proportions
+3. **Average Rating by Brand** – Color-graded bar chart based on customer feedback
+4. **Top 10 Smartphones by Average Rating** – Shows highest-rated models
+5. **Top 10 Smartphones by Total Revenue** – Reveals highest-earning models
+6. **Price vs Rating** – Scatter plot with trend line analyzing price-value relationship
+
+➡️ A **brand filter** allows dynamic updates across all visualizations.
+
+---
+
+## 🔍 Insights Uncovered
+
+- 📈 **Apple** leads both in revenue and customer satisfaction, indicating brand trust and premium pricing power.
+- 📉 **SAMSUNG** holds strong market share but trails slightly behind in average ratings.
+- 🥇 **vivo S2** and **iPhone XS** are among the highest-rated devices.
+- 💰 There's a **moderate positive correlation** between price and customer rating – suggesting premium smartphones tend to receive better feedback.
+- 🏷️ Brands like **realme**, **POCO**, and **Infinix** offer competitive ratings at lower price points, appealing to budget-conscious customers.
+- 🔟 **Top revenue models** are dominated by iPhones, especially Pro/Max variants, revealing Apple’s strength in upselling.
 
 ---
 
-## ▶️ How to Use
+## 🧭 How to Use This Dashboard
 
-1. Clone or download this repository.
-2. Open `Smartphone_Dashboard.twbx` in **Tableau Public** or **Tableau Desktop**.
-3. Use the dropdown filter to explore brand-specific performance.
-4. Interact with charts and hover for detailed tooltips.
+1. Open `Smart Phone Sales & Customer Insights Dashboard.twbx` in **Tableau Desktop** or **Tableau Public**.
+2. Use the **Brand filter dropdown** to explore specific brand-level performance.
+3. Interact with charts by hovering for detailed tooltips or clicking elements to filter visuals contextually.
 
 ---
+
+## 🔮 Future Work
+
+- Incorporate **time series data** to analyze trends across quarters/years  
+- Add **geographic segmentation** to see how sales vary by region  
+- Include **product return rates** or **warranty claims** to balance revenue with reliability  
+- Build a **Story mode** in Tableau to walk viewers through findings  
+- Integrate with a **live SQL database** for real-time updates
